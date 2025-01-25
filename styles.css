@@ -1,0 +1,15 @@
+.date-nav-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.date-nav-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: transparent !important;
+    /* Use Obsidian theme color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

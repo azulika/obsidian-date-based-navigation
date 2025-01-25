@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-date-based-navigation",
+  "name": "Date-Based Navigation",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Adds 'Prev' and 'Next' buttons to navigate notes by date frontmatter.",
+  "author": "azulika",
+  "authorUrl": "Your URL (Optional)",
+  "isDesktopOnly": false
+}
