@@ -1,9 +1,0 @@
-{
-  "dateKeys": [
-    "datetimeCreate"
-  ],
-  "requiredTags": [
-    "thought"
-  ],
-  "maxTitleLength": 20
-}
