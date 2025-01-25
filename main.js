@@ -62,7 +62,9 @@ module.exports = class DateBasedNavigationPlugin extends Plugin {
         ? sortedFiles[i].tags
         : [sortedFiles[i].tags];
 
+      // Include all if requiredTags is empty
       if (
+        this.settings.requiredTags[0] === "" || // Check if requiredTags is empty
         tags.some((tag) => this.settings.requiredTags.includes(tag))
       ) {
         prevFile = sortedFiles[i].file;
@@ -70,13 +72,16 @@ module.exports = class DateBasedNavigationPlugin extends Plugin {
       }
     }
 
+
     let nextFile = null;
     for (let i = currentIndex + 1; i < sortedFiles.length; i++) {
       const tags = Array.isArray(sortedFiles[i].tags)
         ? sortedFiles[i].tags
         : [sortedFiles[i].tags];
 
+   // Include all if requiredTags is empty
       if (
+        this.settings.requiredTags[0] === "" || // Check if requiredTags is empty
         tags.some((tag) => this.settings.requiredTags.includes(tag))
       ) {
         nextFile = sortedFiles[i].file;
